@@ -1,0 +1,180 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/roboto-v32-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/roboto-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    background-color: #f5f1ee;
+}
+
+header .image-container {
+    flex: 1;
+}
+
+header .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .text-container {
+    flex: 1;
+    text-align: left;
+}
+
+header .text-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+}
+
+section.purpose {
+    padding: 4rem 10%;
+}
+.pr{
+    font-family: roboto;
+}
+.purpose h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.purpose p {
+    margin-bottom: 3rem;
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.traits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .traits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .traits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.trait {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.portfolio {
+    padding: 4rem 10%;
+    background-color: #f9f9f9;
+}
+
+.portfolio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+
+.portfolio table th,
+.portfolio table td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+.philosophy {
+    padding: 4rem 10%;
+}
+
+.philosophy h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.philosophy p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.team-section {
+    padding: 4rem 10%;
+    background-color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.team-member h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+footer {
+    padding: 2rem 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: #888;
+}

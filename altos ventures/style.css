@@ -1,0 +1,263 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.text-container{
+    margin-left: 100px;
+}
+body {
+    font-family: 'Roboto';
+    color: #000;
+    background: #fff;
+    font-weight: 100;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    background-color: #f5f1ee;
+}
+
+header .image-container {
+    flex: 1;
+}
+
+header .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .text-container {
+    font-weight: 500;
+    font-size: 30px;
+    flex: 1;
+    text-align: left;
+}
+
+header .text-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+}
+
+section.purpose {
+    padding: 1rem 10%;
+}
+.first{
+    overflow: hidden;
+    font-weight: 400;
+}
+.first .ab, p{
+    float: left;
+    width: 50%;
+}
+.second{
+
+    overflow: hidden;
+    font-weight: 400;
+}
+.second .ab, p{
+    float: left;
+    width: 50%;
+}
+.third{
+    overflow: hidden;
+    font-weight: 400;
+}
+.third .ab, p{
+    float: left;
+    width: 50%;
+}
+.fourth{
+    overflow: hidden;
+    font-weight: 400;
+}
+.fourth .ab, p{
+    float: left;
+    width: 50%;
+}
+.fifth{
+    overflow: hidden;
+    font-weight: 400;
+}
+.fifth .ab, p{
+    float: left;
+    width: 50%;
+}
+.ab{
+    margin-top: 70px;
+    font-size: xx-large;
+    font-weight: 400;
+    color: #555;
+}
+.pr{
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+}
+.port{
+    padding: 1rem 10%;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+}
+.purpose p {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #555;
+    flex: 1;
+    text-align: left;
+}
+
+.traits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .traits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .traits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.trait {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.portfolio {
+
+    padding: 1rem 0%;
+    background-color: #f9f9f9;
+}
+
+.portfolio table {
+    width: 500px;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+
+.portfolio table th,
+.portfolio table td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-top:#fff;
+    border-right: #fff;
+
+}
+.ph{
+    padding: 4rem 10%;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+}
+.main {
+    padding: 0 2%;
+    display: flex;
+    flex: 1;
+    width: auto;
+    border-top: #ffffff;
+}
+
+.zero{
+    flex: 1;
+    background: #ffffff;
+    margin-top: 50px;
+    border-right: solid black;
+    height: 500px;
+    width: 700px;
+}
+.two{
+    flex: 3;
+    padding: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+br{
+    margin-top: 80px;
+}
+.people{
+    padding: 1rem 0%;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+}
+.team-section {
+    padding: 2rem 10%;
+    background-color: #fff;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+    width: 90%;
+    max-width: 100%;
+}
+
+.photo-grid img {
+    margin-left: 2%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 2rem 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: #888;
+}
